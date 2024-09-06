@@ -8,11 +8,11 @@ type Props = {}
 
 export default function Header({}:Props){
     return (
-         <div className="border-b-2 border-b-orange-500 py-6">
+         <div className="px-6 border-b-2 border-b-orange-500 py-4">
             <div className="container mx-auto flex justify-between items-center">
                 <Link
-                to={"/"}
-                className="text-3xl font-bold tracking-tighter text-orange-500" 
+                    to={"/"}
+                    className="text-3xl font-bold tracking-tighter text-orange-500" 
                 >
                     PandaEats
                 </Link>

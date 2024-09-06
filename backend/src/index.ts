@@ -12,8 +12,13 @@ app.use(cors())
 
 
 // route import
+import UserRoute from './routes/user.route'
+import errorHandler from './middleware/errorHandler.middleware'
 
 // route declaration
+app.use("/api/v1/users", UserRoute)
+
+app.use(errorHandler)
 
 connectToDb()
 .then(()=>{
